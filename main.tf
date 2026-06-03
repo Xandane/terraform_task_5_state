@@ -7,6 +7,7 @@ terraform {
   }
 
   backend "azurerm" {
+    use_oidc              = true
     resource_group_name   = "tfstate"
     storage_account_name  = "tfstorage2003"
     container_name        = "tfstate"
